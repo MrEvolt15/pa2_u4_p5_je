@@ -38,4 +38,9 @@ public class PersonaServiceImpl implements IPersonaService{
         return this.iPersonaRepository.selecTodo();
     }
 
+    @Override
+    public Persona buscarPorId(Integer id) {
+        return this.iPersonaRepository.select(id);
+    }
+
 }

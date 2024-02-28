@@ -7,6 +7,7 @@ import com.example.demo.repository.modelo.Persona;
 public interface IPersonaService {
 public void guardar(Persona persona);
     public Persona buscarPorCedula(String cedula);
+    public Persona buscarPorId(Integer id);
     public void actualizar(Persona persona);
     public void borrar(String cedula);
     public List<Persona> buscarTodo();

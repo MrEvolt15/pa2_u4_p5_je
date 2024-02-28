@@ -7,6 +7,7 @@ import com.example.demo.repository.modelo.Persona;
 public interface IPersonaRepository {
     public void insertar(Persona persona);
     public Persona seleccionarPorCedula(String cedula);
+    public Persona select(Integer id);
     public void actualizar(Persona persona);
     public List<Persona> selecTodo();
     public void eliminar(String cedula);
